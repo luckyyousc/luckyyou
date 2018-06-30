@@ -146,7 +146,7 @@ contract LuckyYouContract is Pausable {
     bool[5] public timesEnabled = [true, false, false, false, false];
 
     uint[5] public currentCounter = [1, 1, 1, 1, 1];
-    mapping(address => uint[5]) private participatedCounter;
+    mapping(address => uint[5]) public participatedCounter;
     mapping(uint8 => address[]) private participants;
     //todo
     mapping(uint8 => uint256) public participantsCount;
